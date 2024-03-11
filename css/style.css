@@ -512,7 +512,27 @@ body {
 }
 .experience__main--text {
   font-weight: 600;
-  font-size: 58px;
+  font-size: 20px;
+}
+@media only screen and (min-width: 667px) and (max-width: 834px) {
+  .experience__main--text {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 834px) and (max-width: 1024px) {
+  .experience__main--text {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1540px) {
+  .experience__main--text {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 1540px) {
+  .experience__main--text {
+    font-size: 58px;
+  }
 }
 .experience__second--text {
   font-weight: 400;
@@ -544,7 +564,7 @@ body {
   width: 70%;
 }
 .footer {
-  margin-top: 50px;
+  margin-top: 10px;
   background-image: url(../images/footer.png);
   background-size: 100%;
 }
@@ -1300,10 +1320,7 @@ body {
   height: 40px;
   border-radius: 50%;
   background-color: white;
-  transition: 0.5;
-}
-.controls a:active {
-  color: #e79423;
+  transition: all 0.5s;
 }
 
 .img-1 {
@@ -1365,5 +1382,45 @@ body {
 
   .image-wrapper-2 {
     height: 640px;
+  }
+}
+.controls a:hover {
+  box-sizing: border-box;
+  transform: scale(1.1);
+  border: solid 2px #e79423;
+}
+a.active {
+  background-color: #e79423;
+  transform: translateY(-20%);
+}
+.experience__text p {
+  padding-left: 20px;
+  font-size: 18px;
+}
+@media only screen and (min-width: 667px) and (max-width: 834px) {
+  .experience__text p {
+    padding-left: 25px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 834px) and (max-width: 1024px) {
+  .experience__text p {
+    padding-left: 30px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1540px) {
+  .experience__text p {
+    padding-left: 50px;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 1540px) and (max-width: 1920px) {
+  .experience__text p {
+    padding-left: 50px;
+    font-size: 36px;
   }
 }

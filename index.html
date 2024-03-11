@@ -116,15 +116,15 @@
             </section>
             <section class="experience ">
                 <div class="experience__wrap container">
-                <!-- <div class="experience__main--text">Our invaluable experience: <p class="experience__second--text"><b>VIBRA</b> on SBC Summit Barcelona <p class="experience__third--text">2023 event in Fira Barcelona.</p></p></div> -->
+                <div class="experience__main--text">Our invaluable experience: </div>
                 <div class="logo__experience"><img src="./images/logo_polikam.png" alt="logo"></div>
             </div>
             <div class="container_1">
               <div class="slider-wrapper">
                 <div class="sliders">
                   <div class="sliders_block" id="slide-1">
-                    <div>
-                      <p>VIBRA on SBC Summit Barcelona 2023 event in Fira Barcelona.</p>
+                    <div class="experience__text">
+                      <p class="experience__second--text"><b>VIBRA</b> on SBC Summit Barcelona <p class="experience__third--text">2023 event in Fira Barcelona.</p></p>
                     </div>
           
                     <div class="slide">
@@ -139,8 +139,8 @@
                   </div>
           
                   <div class="sliders_block" id="slide-2">
-                    <div>
-                      <p>STUDIO ZAPPRIANI on Light & Building 2022 event in Frankfurt am main.</p>
+                    <div class="experience__text">
+                      <p class="experience__second--text"><b>STUDIO ZAPPRIANI</b> on Light & Building <p class="experience__third--text">2022 event in Frankfurt am main.</p></p>
                     </div>
           
                     <div class="slide">
@@ -155,8 +155,8 @@
                   </div>
           
                   <div class="sliders_block" id="slide-3">
-                    <div>
-                      <p>BARBARABANG on SBC Summit Barcelona 2023 event in Fira Barcelona.</p>
+                    <div class="experience__text">
+                      <p class="experience__second--text"><b>BARBARABANG </b>on SBC Summit <p class="experience__third--text">Barcelona 2023 event in Fira Barcelona.</p></p>
                     </div>
           
                     <div class="slide">
@@ -171,8 +171,8 @@
                   </div>
           
                   <div class="sliders_block" id="slide-4">
-                    <div>
-                      <p>RENKLER on Exhibition Blechexpo Messe in Messe Stuttgart</p>
+                    <div class="experience__text">
+                      <p class="experience__second--text"><b>RENKLER</b> on Exhibition Blechexpo <p class="experience__third--text">Messe in Messe Stuttgart</p></p>
                     </div>
           
                     <div class="slide" id="slide-4">
@@ -188,7 +188,7 @@
                 </div>
           
                 <div class="controls">
-                  <a href="#slide-1"></a>
+                  <a href="#slide-1" class="active"></a>
                   <a href="#slide-2"></a>
                   <a href="#slide-3"></a>
                   <a href="#slide-4"></a>
@@ -220,5 +220,14 @@
                 >
               </li>
         </footer>
+        <script>
+          const items = document.querySelectorAll("div a");
+          items.forEach((item) => {
+            item.addEventListener("click", () => {
+              document.querySelector("a.active").classList.remove("active");
+              item.classList.add("active");
+            });
+          });
+        </script>
   </body>
 </html>
