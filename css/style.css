@@ -212,7 +212,7 @@ body {
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .menu__nav--text {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 667px) {
@@ -2543,10 +2543,10 @@ a.active {
   gap: 10px;
 }
 .projects__image {
-  height: 250px;
-  width: 50%;
+  width: calc(50% - 5px);
+  max-height: 640px;
 }
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+/* @media only screen and (min-width: 320px) and (max-width: 480px) {
   .projects__image {
     height: 140px;
   }
@@ -2558,7 +2558,7 @@ a.active {
 }
 @media only screen and (min-width: 667px) and (max-width: 834px) {
   .projects__image {
-    height: 340px;
+    height: 280px;
   }
 }
 @media only screen and (min-width: 834px) and (max-width: 1024px) {
@@ -2575,7 +2575,7 @@ a.active {
   .projects__image {
     height: 640px;
   }
-}
+} */
 .projects__text {
   padding-left: 10px;
   display: flex;
