@@ -20,17 +20,22 @@
             <div class="container__header">
             
               <ul class="menu__nav--list">
-                <li class="menu__nav--item">
+                <li class="menu__main--nav-item">
                   <a href="./index.html" class="menu__nav--link"
-                    ><span class="menu__link--color">About us</span></a
+                    ><span class="menu__link--color fixed__color">About us</span></a
                   >
                 </li>
-                <li class="menu__nav--item">
+                <li class="menu__main--nav-item">
                   <a href="./why__polikam.html" class="menu__nav--link"
                     ><span class="menu__link--color">Why Polikam Hi-Tech</span></a
                   >
                 </li>
-                <li class="menu__nav--item">
+                <li class="menu__main--nav-item">
+                  <a href="./projects.html" class="menu__nav--link"
+                    ><span class="menu__link--color">Our Projects</span></a
+                  >
+                </li>
+                <li class="menu__main--nav-item">
                   <a href="./contact.html" class="menu__nav--link"
                     ><span class="menu__link--color">Contact us</span></a
                   >
@@ -80,7 +85,7 @@
             </div>
             </section>
             <section class="innovative container" >
-                <div class="innovative__main--text"><h1>Innovative solution exhibitions and <p>Trade-in equipment</p></h1></div>
+                <div class="innovative__main--text">Innovative solution exhibitions and <p>Trade-in equipment</p></div>
                 <div class="to__wrap--innovative">
                     <div class="We__suggest">
                     <h2 class="suggest__main--text">We suggest:</h2>
@@ -114,10 +119,50 @@
                     </div>
                     
                 </div>
-                <div class="logo__innovate"><img src="./images/logo_polikam.png" alt="logo"></div>
+                <div class="logo__innovate"><img src="./images/logo_polikam.png" alt="logo" class="img__logo--innovate"></div>
                 
             </section>
             <section class="experience ">
+            <div class="experience__wrap container">
+              <div class="experience__main--text">Our invaluable experience: </div>
+              <div class="logo__experience"><img src="./images/logo_polikam.png" alt="logo" class="logo__experience--footer-img"></div>
+          </div>
+            <div id="slider-container">
+              <div id="top">
+                  <img src="./images/arrow.svg" alt="" class="arrow arrow-left">
+                  <div id="slider">
+                      <div class="slider-image block">
+                        <div class="experience__text">
+                          <p class="experience__second--text"><b>STUDIO ZAPPRIANI</b> on Light & Building <p class="experience__third--text">2022 event in Frankfurt am main.</p></p>
+                        </div>
+                      <img src="../images/Frame_30.png" alt="image" class="slider__img">
+                  </div>
+                  <div class="slider-image ">
+                    <div class="experience__text">
+                      <p class="experience__second--text"><b>BARBARABANG </b>on SBC Summit <p class="experience__third--text">Barcelona 2023 event in Fira Barcelona.</p></p>
+                    </div>
+                      <img src="../images/Frame_30_1.png" alt="image" class="slider__img">
+                  </div>
+                  <div class="slider-image">
+                    <div class="experience__text">
+                      <p class="experience__second--text"><b>RENKLER</b> on Exhibition Blechexpo <p class="experience__third--text">Messe in Messe Stuttgart</p></p>
+                    </div>
+                      <img src="../images/Frame_30_2.png" alt="image" class="slider__img">
+                  </div>
+                  <div class="slider-image ">
+                    <div class="experience__text">
+                      <p class="experience__second--text"><b>VIBRA</b> on SBC Summit Barcelona <p class="experience__third--text">2023 event in Fira Barcelona.</p></p>
+                    </div>
+                      <img src="../images/exhibition1.png" alt="image" class="slider__img">
+                  </div>
+                  </div>
+                  <img src="./images/arrow.svg" alt="" class="arrow arrow-right">
+              </div>
+              <div id="bottom"></div>
+          </div>
+        </section>
+          <script src="./first_slider.js"></script>
+            <!-- <section class="experience ">
                 <div class="experience__wrap container">
                 <div class="experience__main--text">Our invaluable experience: </div>
                 <div class="logo__experience"><img src="./images/logo_polikam.png" alt="logo" class="logo__experience--footer-img"></div>
@@ -198,11 +243,11 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="exhibition__img">
+            <div class="exhibition__img">
                 <img src="./images/exhibition1.png" alt="exhibition" class="exhibition__img1">
                 <img src="./images/exhibition1_1.png" alt="exhibition" class="exhibition__img1_1"> 
             </div> -->
-            </section>
+            </section> 
         </main>
         <footer class="footer">
           <div class="logo-wrapper">
@@ -228,7 +273,7 @@
             </div>
           </ul>
         </footer>
-        <script>
+        <!-- <script>
           const items = document.querySelectorAll("div a");
           items.forEach((item) => {
             item.addEventListener("click", () => {
@@ -236,6 +281,6 @@
               item.classList.add("active");
             });
           });
-        </script>
+        </script> -->
   </body>
 </html>
