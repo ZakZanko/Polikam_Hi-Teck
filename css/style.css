@@ -76,12 +76,12 @@ body {
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .container__header {
-    height: 340px;
+    height: 290px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 667px) {
   .container__header {
-    height: 400px;
+    height: 360px;
   }
 }
 @media only screen and (min-width: 667px) and (max-width: 834px) {
@@ -157,6 +157,11 @@ body {
   display: flex;
   justify-content: space-around;
 }
+@media only screen and (min-width: 667px) {
+  .menu__nav--list {
+    gap: 20px;
+  }
+}
 .menu__nav--link {
   color: #000000;
 }
@@ -171,30 +176,30 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .menu__link--color {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 667px) {
   .menu__link--color {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media only screen and (min-width: 667px) and (max-width: 834px) {
   .menu__link--color {
     font-weight: 600;
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 @media only screen and (min-width: 834px) and (max-width: 1024px) {
   .menu__link--color {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1540px) {
   .menu__link--color {
-    font-size: 38px;
+    font-size: 34px;
   }
 }
 @media only screen and (min-width: 1540px) {
@@ -416,12 +421,12 @@ body {
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .hips__photo {
-    top: 445px;
+    top: 395px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 667px) {
   .hips__photo {
-    top: 525px;
+    top: 485px;
   }
 }
 @media only screen and (min-width: 667px) and (max-width: 834px) {
@@ -525,13 +530,13 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .polikam__img {
     right: 10px;
-    top: 520px;
+    top: 475px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 667px) {
   .polikam__img {
     right: 10px;
-    top: 590px;
+    top: 560px;
   }
 }
 @media only screen and (min-width: 667px) and (max-width: 834px) {
@@ -2362,16 +2367,30 @@ a.active {
   height: 30px;
   cursor: pointer;
 }
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 374px) {
   .arrow {
     top: 1490px;
     width: 30px;
     height: 30px;
   }
 }
+@media only screen and (min-width: 374px) and (max-width: 384px) {
+  .arrow {
+    top: 1460px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 384px) and (max-width: 480px) {
+  .arrow {
+    top: 1430px;
+    width: 30px;
+    height: 30px;
+  }
+}
 @media only screen and (min-width: 480px) and (max-width: 667px) {
   .arrow {
-    top: 1690px;
+    top: 1660px;
     width: 50px;
     height: 50px;
   }
@@ -2545,6 +2564,31 @@ a.active {
 .projects__image {
   width: calc(50% - 5px);
   max-height: 640px;
+}
+.header__main--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 667px) and (max-width: 1024px) {
+  .header__main--item {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header__main--item {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+.menu__main--nav-item {
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 667px) {
+  .menu__main--nav-item {
+    padding-bottom: 0;
+  }
 }
 /* @media only screen and (min-width: 320px) and (max-width: 480px) {
   .projects__image {
